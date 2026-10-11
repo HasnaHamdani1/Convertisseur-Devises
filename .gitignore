@@ -1,0 +1,21 @@
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+
+# Flask
+instance/
+
+# Node.js
+node_modules/
+dist/
+
+# Variables et fichiers locaux
+.env.*
+!.env.example
+
+# Éditeurs
+.vscode/
