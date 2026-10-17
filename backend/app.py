@@ -4,7 +4,14 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/convertir": {
+        "origins": [
+            "http://localhost:5173",
+            "https://convertisseur-devises.dockhosting.dev"
+        ]
+    }
+})
 
 
 @app.route("/")
